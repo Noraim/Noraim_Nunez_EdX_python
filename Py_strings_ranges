@@ -1,0 +1,35 @@
+#Create string to print "hello world"
+str1 = "hello"
+str2 = "world"
+# "" adds space in the output when summing the string together 
+string = str1 + " " + str2
+print(string)
+
+# These are Infinite loops 
+numberOfLoops = 0
+numberOfApples = 2
+while numberOfLoops < 10:
+#    numberOfApples *= 2
+#    numberOfApples += numberOfLoops
+    numberOfLoops -= 1
+print("Number of apples: " + str(numberOfApples))
+
+
+###########Dealing with for i in range() 
+mysum= 0 
+for i in range(7,10): 
+# increments sum by i, += says: add to my sum the value for i
+# 7 + 8 + 9 = 24  
+    mysum += i 
+    print(mysum)
+
+# gives a space for outputs in same cell 
+print("")
+    
+mysum1= 0 
+#This says from withing the range from 5 to 11 by factor of 2 
+#5 +7 + 9 = 21 
+for o in range(5,11,2): 
+#increments by o and the  
+    mysum1 +=o
+    print(mysum1) 
