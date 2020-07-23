@@ -1,0 +1,42 @@
+#Understanding inputs and outputs 
+#If 6>7 then print yep, if that is not true "else" then print yep 
+if 6>7:
+    print("Yep")
+else:
+    print("Nope") 
+
+                    ####Control flow - Branching
+# let var = panda, so if var is really equal to panda then print cute, if not then
+#then print 
+var = 'Panda'
+if var == "panda":
+    print("Cute!") 
+elif var == "Panda":
+    print("Regal!") 
+else:
+    print("Ugly...")
+    
+#If temp > 85, then print "Hot", if not, what id temp>100? then print "really hot". If
+#not, if temp>60 then print "comfortable" This is the "elif statement"
+#if none of these are then then "else" print cold 
+temp = 120
+if temp > 85:
+    print("Hot")
+elif temp > 100:
+    print("REALLY HOT!")
+elif temp > 60:
+    print("Comfortable") 
+else:
+    print("Cold")
+
+#elif wants to put multiple "true" statements in the same bin, if each run is not true
+#"else" print cold 
+temp = 50
+if temp > 85:
+    print("Hot")
+elif temp > 100:
+    print("REALLY HOT!")
+elif temp > 60:
+    print("Comfortable")
+else:
+    print("Cold") 
