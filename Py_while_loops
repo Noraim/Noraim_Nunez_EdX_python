@@ -56,3 +56,71 @@ While abs(guess+guess) >= epsilon:
     guess= guess - (((guess**2)-y)/(2*guess))
 print('numGuesses=' +str(numGuesses)) 
 print('Square root of' +str(y) + 'is about' +str(guesses))
+
+#####################################################
+print("")
+iteration = 0
+count = 0   # note: declarations must be before and outside loop or the output will
+#not read the loop correctly 
+# While #' 0-4 <5 
+while iteration < 5:
+# there are 12 elements, counting from 0+12, 12 + 12, 12 + 12 +12+12 until 4 times 
+#cretes multiples of 12 in iterations 0-4 
+    for letter in "hello, world": 
+        count += 1
+    print("Iteration " + str(iteration) + "; count is: " + str(count))
+    iteration += 1 
+
+#####################################################
+print("")
+x = 25
+epsilon = 0.01
+step = 0.1
+guess = 0.0
+#while 0 ** 2 - 25 >=0.01 
+#if 0 <= x then 0 = 0+0.1
+#if not true then break and go to second loop 
+while abs(guess**2-x) >= epsilon:
+    if guess <= x:
+        guess += step
+    else:
+        break
+#if the abs(0**2 -25) >= 0.01 
+#then print failed or else print succeeded 
+if abs(guess**2 - x) >= epsilon:
+    print('failed')
+else:
+    print('succeeded: ' + str(guess))
+
+#####################################################
+print("")
+
+initial = 0
+final = 100 
+# User will be asked the following 
+user_reads = input("Please think of a number between 0 and 100:")
+ans = (initial + final)/2 
+
+#while this statement is true, The user will respond with a value where the response = NONE
+#takes place. I then respond to the user my print output with +str(ans)+ using a bisection 
+#sorting format given the average formula from "ans"
+while True:
+    response = None
+    print "Is your secret number " + str(ans) + "?"
+    response = str(raw_input("Enter 'h' to indicate the guess is too high" 
+                             "Enter 'l' to indicate the guess is too low. " '' 
+                             "Enter 'c' to indicate I guessed correctly."))
+#The while loop creates the continuous guessing game for the values I am trying to guess 
+#each if loop says, if the value is too high 'h'  or low 'l' 
+    while response not in ['h', 'c', 'l']:
+        response = str(raw_input("Please enter a 'h', 'l', or 'c' "))
+    if response == 'c':
+         break
+    if response == 'l': 
+        initial = ans 
+    else:
+        final = ans 
+    ans = (initial + final)/2 
+
+print ("Game over. Your secret number is:", ans) 
+
