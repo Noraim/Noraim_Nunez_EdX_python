@@ -1,0 +1,34 @@
+#Understanding Strings, with slices with "and" "or" "not"
+
+# Adding variables both in double "" 
+print("a"+"bc")
+# answer: abc
+
+# Multiplying value WITHOUT "" to variable "" will print X amount of times 
+print(3*"bc")
+#answer: bcbcbc
+
+# Multiplying value WITH "" to variable "" will print X amount of times
+#print("3"*"bc")
+#answer: error 
+
+# Printing out ONLY 2nd variable, counting 0 as well. 
+print("abcd"[2])
+#answer: c 
+
+#Printing out elements from 0-2 
+print("abcd"[0:2]) 
+#answer: ab 
+
+str1= 'hello'
+str2= ','
+str3= 'world'
+str4= str1 + str3 
+print('low' in str4)
+#prints out all elements expect the last one. 
+print(str1[:-3])
+#prints outs all elements backwards :: 
+print(str4[::-1])
+#  prints out unknown 
+print(str4[1:9:2])
+#answer: elwr
