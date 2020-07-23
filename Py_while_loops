@@ -2,7 +2,7 @@ num = 10
 while num > 3:
     num -= 1
     print(num) 
-
+#####################################################
 print("")
 
 num = 10
@@ -13,6 +13,7 @@ while True:
     print(num)
     num -= 1
 print('Outside of loop')
+#####################################################
 
 # These are two different but similar ways of getting the same output 
 #num = 0
@@ -32,7 +33,7 @@ var = 10
 while (0<var): 
     print(var) 
     var -= 2
-
+#####################################################
 print("")
 
 val = end
@@ -42,5 +43,16 @@ while val > 0 :
     num+=val
     val-=1
     print(str(num)) 
-
+#####################################################
 print("")
+
+epsilon= 0.01
+y= 54.0
+guess= y/2.0
+numGuesses=0
+
+While abs(guess+guess) >= epsilon:
+    numGuesses+= 1
+    guess= guess - (((guess**2)-y)/(2*guess))
+print('numGuesses=' +str(numGuesses)) 
+print('Square root of' +str(y) + 'is about' +str(guesses))
