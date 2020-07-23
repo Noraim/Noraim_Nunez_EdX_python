@@ -1,0 +1,46 @@
+num = 10
+while num > 3:
+    num -= 1
+    print(num) 
+
+print("")
+
+num = 10
+while True:
+    if num < 7:
+        print('Breaking out of loop')
+        break
+    print(num)
+    num -= 1
+print('Outside of loop')
+
+# These are two different but similar ways of getting the same output 
+#num = 0
+#while num <= 8:
+#    num += 2
+#    print(num)
+#print("GoodBye!")
+
+num = 2
+while(num <= 10):
+    print(num)
+    num += 2  # or num = num + 2 
+print("Goodbye!")
+
+print("Hello!")
+var = 10 
+while (0<var): 
+    print(var) 
+    var -= 2
+
+print("")
+
+val = end
+num = 0
+
+while val > 0 :
+    num+=val
+    val-=1
+    print(str(num)) 
+
+print("")
